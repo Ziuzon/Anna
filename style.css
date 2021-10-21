@@ -1,0 +1,76 @@
+.game { 
+width: 650px;
+height: 281px;
+border-bottom: 1px solid rgb(0, 0, 0) ;
+margin: auto;
+}
+
+.game2 { 
+    width: 680px;
+    height: 25px;
+    border-bottom: 1px solid rgb(0, 0, 0) ;
+    margin: auto;
+    }
+
+
+.container {
+    max-width: 928px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  
+
+ #anna {
+     width: 170px;
+     height: 160px;
+     background-image: url(img/anna.png);
+     background-size: 150px 160px;
+     position: relative;
+     top: 150px;
+     left: 25px;
+
+ }
+
+
+ #had {
+     width: 200px;
+     height: 160px;
+     background-image: url(img/had.png);
+     background-size: 170px 160px;
+     position: relative;
+     top: 38px;
+     left: 580px;
+     animation: hadMov 2.5s infinite linear;
+ }
+
+ @keyframes hadMov {
+   0% {
+       left: 580;
+   }
+   100% {
+   left: -100px;
+   }
+ }
+
+.jump {
+    animation: jump 0.8s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 74px;
+    }
+    50% {
+        top: 50px;
+    }
+    80% {
+        top: 110px;
+    }
+    100% {
+    top: 150px;
+    }
+  }
